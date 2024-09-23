@@ -22,12 +22,19 @@ constructor(branchInfo) {
 }
 
 // 4. Add methods to the `BankBranch` class for managing branch-related information. For example, you can add a method like `getBranchInfo` to retrieve branch details.
-
+getBranchInfo() {
+    return this.branchInfo;
+}
+}
+//NOTE NOTE NOTE
+//Two instances, branchA and branchB, are created with different branch information.
+//Despite passing different information, the second instance (branchB) still returns the original instance's branch info (branchA), demonstrating that both refer to the same object.
 
 // 5. In the usage section:
 //    - Create instances of the `BankBranch` class, such as `branchA` and `branchB`, with different branch information.
 //    - Use the `getBranchInfo` method to retrieve branch information from the instances.
 //    - Verify that `branchA` and `branchB` are both referring to the same instance by comparing them using `===`.
+
 
 // This pseudo-code provides a step-by-step explanation of how to implement the Singleton Pattern for managing a single instance of the `BankBranch` class throughout the application, ensuring that multiple instances refer to the same object.
 
